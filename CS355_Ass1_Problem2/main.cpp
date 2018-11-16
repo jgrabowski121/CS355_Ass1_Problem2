@@ -65,7 +65,7 @@ int main(int argc, const char * argv[]) {
     srand(time(NULL)); // implicit conversion is okay
     
     timeTest.setStartClock();
-    for(size_t i = 0; i <= ITERATION; i++)
+    for(size_t i = 0; i <= 2; i++)
     {
         function1();
     }
@@ -161,6 +161,12 @@ void function1()
             arrayOne[i][j] = rand() % INT_MAX;
         }
     
+    for (size_t i = 0; i < 100; ++i)
+        for(size_t j = 0; j < 100; ++j)
+            for(size_t k = 0; k < 100; ++k)
+            {
+                arrayTwo[i][j] = arrayOne[i][k] * arrayOne[k][j];
+            }
     
 }
 
@@ -179,9 +185,14 @@ void function2()
 
 void function3()
 {
-    char arraySize = 100;
+    const char arraySize = 100;
     int** arrayOne = new int*[arraySize];
+    for(int i = 0; i < arraySize; ++i)
+        arrayOne[i] = new int[arraySize];
+    
     int** arrayTwo = new int*[arraySize];
+    for(int i = 0; i < arraySize; ++i)
+        arrayTwo[i] = new int[arraySize];
     
     for (size_t i = 0; i < 100; ++i)
         for(size_t j = 0; j < 100; ++j)
