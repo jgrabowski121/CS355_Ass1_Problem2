@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD3406EE219F38360051BF86 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD3406ED219F38360051BF86 /* main.cpp */; };
+		FD3406FA219F396F0051BF86 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD3406F8219F396F0051BF86 /* main.cpp */; };
+		FD3406FD219F41E30051BF86 /* problem2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD3406FB219F41E30051BF86 /* problem2.cpp */; };
+		FD340700219F42160051BF86 /* timeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD3406FF219F42160051BF86 /* timeTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,11 @@
 
 /* Begin PBXFileReference section */
 		FD3406EA219F38360051BF86 /* CS355_Ass1_Problem2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CS355_Ass1_Problem2; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD3406ED219F38360051BF86 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FD3406F8219F396F0051BF86 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FD3406FB219F41E30051BF86 /* problem2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = problem2.cpp; sourceTree = "<group>"; };
+		FD3406FC219F41E30051BF86 /* problem2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = problem2.hpp; sourceTree = "<group>"; };
+		FD3406FE219F42160051BF86 /* timeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timeTest.h; sourceTree = "<group>"; };
+		FD3406FF219F42160051BF86 /* timeTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timeTest.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,11 @@
 		FD3406EC219F38360051BF86 /* CS355_Ass1_Problem2 */ = {
 			isa = PBXGroup;
 			children = (
-				FD3406ED219F38360051BF86 /* main.cpp */,
+				FD3406F8219F396F0051BF86 /* main.cpp */,
+				FD3406FB219F41E30051BF86 /* problem2.cpp */,
+				FD3406FF219F42160051BF86 /* timeTest.cpp */,
+				FD3406FE219F42160051BF86 /* timeTest.h */,
+				FD3406FC219F41E30051BF86 /* problem2.hpp */,
 			);
 			path = CS355_Ass1_Problem2;
 			sourceTree = "<group>";
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD3406EE219F38360051BF86 /* main.cpp in Sources */,
+				FD3406FD219F41E30051BF86 /* problem2.cpp in Sources */,
+				FD340700219F42160051BF86 /* timeTest.cpp in Sources */,
+				FD3406FA219F396F0051BF86 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
