@@ -59,13 +59,13 @@ void function4();
 int main(int argc, const char * argv[]) {
     //Create executionTimeTester object
     executionTimeTester timeTest;
-    unsigned ITERATION = 100000;
+    unsigned ITERATION = 1000;
     
     // initialize random seed
     srand(time(NULL)); // implicit conversion is okay
     
     timeTest.setStartClock();
-    for(size_t i = 0; i <= 2; i++)
+    for(size_t i = 0; i <= ITERATION; i++)
     {
         function1();
     }
@@ -181,6 +181,13 @@ void function2()
             arrayOne[i][j] = rand() % INT_MAX;
         }
     
+    for (size_t i = 0; i < 100; ++i)
+        for(size_t j = 0; j < 100; ++j)
+            for(size_t k = 0; k < 100; ++k)
+            {
+                arrayTwo[i][j] = arrayOne[i][k] * arrayOne[k][j];
+            }
+    
 }
 
 void function3()
@@ -200,10 +207,20 @@ void function3()
             arrayOne[i][j] = rand() % INT_MAX;
         }
     
+    for (size_t i = 0; i < 100; ++i)
+        for(size_t j = 0; j < 100; ++j)
+            for(size_t k = 0; k < 100; ++k)
+            {
+                arrayTwo[i][j] = arrayOne[i][k] * arrayOne[k][j];
+            }
+    
     delete [] arrayOne;
     delete [] arrayTwo;
 }
 
+
+// Not relevant for problem 2
+/*
 void function4()
 {
     char arraySize = 100;
@@ -216,3 +233,4 @@ void function4()
             arrayOne[i][j] = rand() % INT_MAX;
         }
 }
+*/
