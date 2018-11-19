@@ -1,10 +1,16 @@
 //
-//  main.cpp
-//  CS355Ass1
+// Justin Grabowski
+// CS355
+// Fall 2018
+// November 10th 2018
+// Instructor Ganchev G.
+// main.cpp
+// CS355Ass1_Problem2
+// Language C++
 //
-//  Created by Justin Grabowski on 11/14/18.
-//  Copyright © 2018 Justin Grabowski. All rights reserved.
-//
+// Purpose: This file tests the time used for the multilication
+// of multidementional arrays in C+
+
 
 #include <iostream>
 #include "timeTest.h"

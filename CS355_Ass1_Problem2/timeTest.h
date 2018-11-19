@@ -1,13 +1,14 @@
+// CS355
+// Fall 2018
+// November 10th 2018
+// Instructor Ganchev G.
+// main.cpp
+// CS355Ass1_Problem2
+// Language C++
 //
-//  timeTest.h
-//  CS355Ass1
-//
-//  Created by Justin Grabowski on 11/14/18.
-//  Copyright © 2018 Justin Grabowski. All rights reserved.
-//
+// Purpose: This file creates declarations for the time class
+// used for testing time
 #include <ctime>
-
-
 
 #ifndef timeTest_h
 #define timeTest_h
@@ -32,11 +33,6 @@ public:
    */
    double getTimeDiferenceSeconds();
 };
-
-
-
-
-
 
 
 
