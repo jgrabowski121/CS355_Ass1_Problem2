@@ -124,28 +124,6 @@ int main(int argc, const char * argv[]) {
     << (timeTest.getTimeDiferenceSeconds()/100000) * 1000
     << " ms\n\n";
     
-    //-----------------
-    /*
-     static unsigned long long iterations = 0;
-     while(true)
-     {
-     try
-     {
-     function4();
-     iterations++;
-     if((iterations % 100000) == 0)
-     {
-     std::cout << "Iterations : " << iterations << std::endl;
-     }
-     }
-     catch (std::bad_alloc&)
-     {
-     std::cout << "Crashed after : " << iterations << std::endl;
-     break;
-     }
-     
-     }
-     */
     return 0;
 }
 
@@ -219,18 +197,3 @@ void function3()
 }
 
 
-// Not relevant for problem 2
-/*
-void function4()
-{
-    char arraySize = 100;
-    int** arrayOne = new int*[arraySize];
-    int** arrayTwo = new int*[arraySize];
-    
-    for (size_t i = 0; i < 100; ++i)
-        for(size_t j = 0; j < 100; ++j)
-        {
-            arrayOne[i][j] = rand() % INT_MAX;
-        }
-}
-*/
